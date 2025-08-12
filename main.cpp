@@ -15,7 +15,7 @@
 #define MAXITER 30
 
 
-// draw Julia/Mandelbrot set
+// draw julia set
 std::vector<sf::Color> fractal (std::vector<sf::Color> im, float left, float top, float xside, float yside, float cx, float cy)
 {
     // determine scaling based on window dimensions
@@ -81,7 +81,7 @@ int main()
     sf::Texture texture;
     sf::Sprite sprite(texture);
 
-    // draw mandelbrot set
+    // draw julia set
     pixels = fractal(pixels, left, top, xside, yside, cx, cy);
     for (uint32_t y = 0; y < HEIGHT; ++y) {
         for (uint32_t x = 0; x < WIDTH; ++x) {
