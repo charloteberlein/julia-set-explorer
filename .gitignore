@@ -1,0 +1,5 @@
+.vscode/
+build/
+CMakeLists.txt
+JuliaSet_small_20250605
+.DS_Store
